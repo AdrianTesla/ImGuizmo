@@ -5,6 +5,11 @@ project "ImGuizmo"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+   includedirs
+   {
+      "%{IncludeDir.imgui}"
+   }
+
 	files
 	{
 		"GraphEditor.h",
